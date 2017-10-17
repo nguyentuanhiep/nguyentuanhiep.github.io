@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	font-size: 80px;
+	color: red;
+}
+
+h3 {
+	text-align: center;
+	font-size: 50px;
+}
+.box {
+	padding: 10px;
+	margin-right: 20px;
+	width: 40%;
+	float: left;
+	border: 2px solid #dddddd;
+	border-top-width: 5px;
+}
+
+.info {
+	border-color: blue;
+}
+
+.contact {
+	border-color: yellow;
+}
+
+.abc {
+	max-width: 1000px;
+	margin: auto;
+}

@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e5e5e5;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 30px 0 10px 0;
+	color: blue;
+
+}
+
+
+img {
+	width: 1280px;
+	height: 960px;
+	
+}
+
+.box {
+	padding: 15px;
+	margin-right: 5px;
+	float: left;
+	width: 25%;
+	border: 1px solid #dddddd;
+	border-top-width: 5px;
+}
+
+.info {
+	border-color: #76a7fa;
+}
+
+.info span {
+	color: #76a7fa;
+}
+
+.contact{
+	border-color: #f9b256;
+}
+
+.contact span {
+	color: #f9b256;
+}
+
+.company {
+	border-color: #4dbfd9;
+}
+
+.company span {
+	color: #4dbfd9;
+}
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+
