@@ -1,0 +1,18 @@
+.post {
+	float: left;
+	text-align: justify;
+	width: 750px;
+	margin-left: 250px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #ccffff;
+}
+
+.post1 img {
+	width: 500px;
+	height: 300px;
+}
+
+.post a {
+	text-decoration: none;
+}
