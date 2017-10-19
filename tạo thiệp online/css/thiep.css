@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 990px;
+	height: 450px;
+}
+
+@keyframes info {
+		0% {opacity: 0.0; left: 0; bottom: 0px;}
+		20% {opacity: 0.4; left: 150px; bottom: 0px;}
+		40% {opacity: 0.8; left: 300px; bottom: 0px;}
+		50% {opacity: 1; left: 380px; bottom: 0px;}
+		60% {opacity: 0.8; left: 460px; bottom: 0px;}
+		80% {opacity: 0.4; left: 610px; bottom: 0px;}
+		100% {opacity: 0.0; left: 760px; bottom: 0px;}
+
+}
+
+
+.abc{
+	position: absolute;
+	height: 450px;
+	border: 1px solid #dddddd;
+	background-color: #80ccff;
+	font-size: 30px;
+	border-color: #80ccff;
+}
+
+
+.box img {
+	display: block;
+	width: 150px;
+	height: 150px;
+	background-color: #80ccff;
+}
+
+.box img:hover{
+	transform: translate(0, -1px);
+}
+
+.text {
+	border: 5px dotted #ddd;
+	border-color: red;
+	text-align: justify;
+	width: 650px;
+	height: 440px;
+	margin-left: 160px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #80ccff;
+}
+
+p {
+	font-size: 32px;
+}
+
+.text1 {
+	font-family: courier new;
+}
+
+.text2 {
+	font-family: georgia;
+}
+
+.photo img {
+	width: 256px;
+	height: 135px;
+	background-color: #80ccff;
+	position: absolute;
+	right: 82px;
+	bottom: 300px;
+	opacity: 1;
+	position: relative;
+	animation: info 10s linear infinite;
+}
+
+.jump {
+	position: absolute;
+	width: 150px;
+	height: 120px;
+	border: 1px solid #dddddd;
+	background-color: #80ccff;
+	font-size: 30px;
+	border-color: #80ccff;
+	animation: fly 5s linear infinite;
+}
+.jump img {
+	width: 150px;
+	height: 120px;
+}
+
+
+
+@keyframes fly {
+	0% {right: 320px; bottom: 0px;}
+	25% {right: 320px; bottom: 150px;}
+	50% {right: 320px; bottom: 300px;}
+	75% {right: 320px; bottom: 150px;}
+	100% {right: 320px; bottom: 0px;}
+	
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: calc(100% + 135px);
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.wrap {
+	max-width: 1000px;
+	height: 1060px;
+	margin: auto;
+	border: 5px ridge #ddd;
+	background-color: #80ccff;
+}
+
