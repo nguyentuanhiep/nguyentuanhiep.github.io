@@ -1,0 +1,85 @@
+html,body{margin: 0;padding: 0;}
+* {box-sizing: border-box;}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: "Open Sans", arial, sans-serif;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+
+@keyframes title {
+	0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+@keyframes info {
+		0% {opacity: 0.0; right: 0; bottom: 0;}
+		10% {opacity: 0.2; right: 100px; bottom: 0;}
+		20% {opacity: 0.4; right: 200px; bottom: 0;}
+		30% {opacity: 0.6; right: 300px; bottom: 0;}
+		40% {opacity: 0.8; right: 400px; bottom: 0;}
+		50% {opacity: 1.0; right: 500px; bottom: 0;}
+		60% {opacity: 0.8; right: 600px; bottom: 0;}
+		70% {opacity: 0.6; right: 700px; bottom: 0;}
+		80% {opacity: 0.4; right: 800px; bottom: 0;}
+		90% {opacity: 0.2; right: 900px; bottom: 0;}
+		1000% {opacity: 0.0; right: 1000px; bottom: 0;}
+
+}
+
+h1 {
+	margin: 25px 0 10px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	font-family: Georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #8e0b00;
+	text-align: center;
+	animation: title 10s ease infinite;
+}
+
+.name {
+	border: 1px solid #ddd;
+	border-color: white;
+}
+
+h4 {
+	text-align: right;
+	opacity: 1;
+	position: relative;
+	animation: info 10s linear infinite;
+}
+
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+.col {
+	float: left;
+	width: 33.33333333%;
+	padding: 15px;
+	position: relative;
+}
+
+
+.thumb {
+	padding: 4px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.thumb img {
+	vertical-align: middle;
+}
