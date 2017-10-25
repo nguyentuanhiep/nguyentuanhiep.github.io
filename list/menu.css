@@ -1,0 +1,22 @@
+.anh1 img {
+	width: 300px;
+	height: 300px;
+}
+
+.anh1 {
+	font-size: 20px;
+	border: 1px solid #ddd;
+	width: 320px;
+	height: 400px;
+	float: left;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.anh1 a {
+	text-decoration: none;
+	color: #353737;
+	padding-left: 5px;
+	padding-right: 5px;
+}

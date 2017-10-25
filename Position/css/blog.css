@@ -38,17 +38,8 @@ img {
 	text-decoration: none;
 }
 
-.box a:link {
-	color: #9933ff;
-}
-
 .box:hover {
 	background-color: grey;
-}
-
-
-.box a:visited {
-	background-color: #9933ff;
 }
 
 .text {

@@ -1,0 +1,46 @@
+h1 {
+	text-align: center;
+}
+
+.box {
+	border: 2px solid #ddd;
+	float: left;
+	text-align: center;
+	height: 155px;
+	width: 300px;
+	margin-left: 24px;
+	font-size: 18px;
+}
+
+.info1 {
+	border-color: red;
+}
+
+.contact1 {
+	border-color: blue;
+}
+
+.address {
+	border-color: yellow;
+}
+
+.km {
+	border: 2px solid #ddd;
+	font-size: 22px;
+}
+
+.km1 {
+	list-style-position: inside;
+}
+
+.img1 {
+	list-style-image: url(img/camket.jpg);
+}
+
+.img2 {
+	list-style-image: url(img/mien-phi-giao-hang.jpg);
+}
+
+.img3 {
+	list-style-image: url(img/doi-tra-hang.jpg);
+}
