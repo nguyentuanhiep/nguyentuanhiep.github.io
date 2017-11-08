@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+.text {
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+.wrap {
+	border: 5px solid #a366ff;
+	text-align: justify;
+	max-width: 1000px;
+	margin: auto;
+}

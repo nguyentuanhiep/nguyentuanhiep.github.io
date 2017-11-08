@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		//Bai 1
+function bai1() {
+  var now = new Date();
+  var date = now.getDate();
+  var month= now.getMonth() + 1;
+  var year= now.getFullYear();
+  var season;
+  if (month<3) {
+    season="Mùa Xuân";
+  }
+  if (month>3 && month<6) {
+    season="Mùa Hè";
+  }
+  if (month>6 && month<9) {
+    season="Mùa Thu";
+  }
+  if (month>9 && month<12) {
+    season="Mùa Đông";
+  }
+  document.write("Hôm nay là ngày" + " " + date + " " + "tháng" + " " + month + " " + "năm" + " " + year + "." +" "+ "Bây giờ là mùa" + " " +season + "." + "<br>");
+}
+bai1();
+
+//Bai 2
+function bai2(n) {
+  if (typeof n=="number") {
+    n=n.toString();
+  } 
+  if (typeof n=="string") {
+    if (n.length <=10) {
+      return n;
+    } 
+    else {
+      return n.slice(0, 9) + "...";
+    } 
+  }
+}
+// console.log(bai2("234123423412"));
+
+//Bài 3
+function bai3(x) {
+  var kq;
+  if(x>=0 && x<=3.9) {
+    kq= "Điểm F";
+  }
+  if(x>=4 && x<=5.4) {
+    kq= "Điểm D";
+  }
+  if(x>=5.5 && x<=6.9) {
+    kq= "Điểm C";
+  }
+  if(x>=7 && x<=8.4) {
+    kq= "Điểm B";
+  }
+  if(x>=8.5 && x<=10) {
+    kq= "Điểm A";
+  }
+  return "Bạn được" + " " + kq;
+}
+// console.log(bai3(2));
+// console.log(bai3(5));
+// console.log(bai3(6));
+// console.log(bai3(8));
+// console.log(bai3(9));
+
+//Bài 4
+function bai4(num) {
+  var translate = "Hello";
+  switch (num) {
+    case 01:
+      return "Hello trong Tiếng Việt có nghĩa là Xin Chào";
+      break;
+    
+    case 02:
+      return "Hello trong Tiếng Đức có nghĩa Hallo";
+      break;
+      
+    case 03:
+      return "Hello trong Tiếng Ý có nghĩa Ciao";
+      break;
+      
+    case 04:
+      return "Hello trong Tiếng Pháp có nghĩa Bonjour";
+      break;
+      
+    case 05:
+      return "Hello trong Tiếng Tây Ban Nha có nghĩa Hola";
+      break;
+  }
+}
+// console.log(bai4(01));
+// console.log(bai4(02));
+// console.log(bai4(03));
+// console.log(bai4(04));
+// console.log(bai4(05));
+
+//Bài 5
+function bai5(n) {
+  for (var i=0; i<=n.length; i++) {
+    if (n[i]=="true") {
+      return ("Giá trị true xuất hiện đầu tiên ở vị trí thứ" + (i+1));
+    }
+  }
+}
+// console.log(bai5(["false","true"," false"]));
+
+//Bài 6
+function bai6() {
+ var i=1;
+ var j=2;
+ while (i<=99 && i%2==1 || j<=99 && j%2==0) {
+   document.write("<span style='color:red'>" + i + " " + "</span>");
+   i+=2;
+   document.write("<span style='color:blue'>" + j + " " + "</span>");
+   j+=2;
+ }
+}
+bai6();
+	</script>
+</body>
+</html>

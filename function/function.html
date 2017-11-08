@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="script.js">
+</head>
+<body>
+	<script>
+		//Bai 1
+		function bai1(x) {
+		  return x*x
+		}
+		console.log(bai1(7))
+		console.log(bai1(25))
+
+		//Bai 2
+		function bai2(a,b,c) {
+		  return (3*a+2*b-c)*(3*a+2*b-c)
+		}
+		console.log(bai2(1,2,4))
+		console.log(bai2(3,5,7))
+
+		//Bai 3
+		function bai3() {
+		  var title= "Hi everyone, my name is Hiep and i am 21 years old "; 
+		  return title.slice(0,9) + "..."
+		}
+		console.log(bai3())
+
+		//Bai 4
+		function bai4() {
+		  var pr= "welcome to vietnam";
+		  return pr.charAt(0).toUpperCase() + pr.slice(1) 
+		}
+		console.log(bai4())
+
+		//Bai 5
+		function bai5() {
+		  var numbers= [123, 1234, 45, 345, 578, 7892635, 24, -13659];
+		  return numbers.minInNumbers = Math.min.apply(Math, numbers);  
+		}
+		console.log(bai5())
+
+		//Bai 6
+		function bai6() {
+		  var name= ["Luong Ngoc Phuc", "Nguyen Han Duy", "Tran Ngoc Hoang", "Do Quang Huy", "Phan Huu Hao"];
+		  return name.sort();
+		}
+		 document.write(bai6());
+
+		//Bai 7
+		function bai7() {
+		    var aboutMe = function() {
+		      document.write("Xin chào, tôi là " + this.first_name + this.last_name +
+		        ". Năm nay tôi " +
+		        this.age +
+		        " tuổi")
+		    }
+
+		    var teacher = {
+		      first_name: "Quang",
+		      last_name: "Huy",
+		      age: 27,
+		      say: function() {}
+		    }
+		    teacher.say = aboutMe;
+		    return teacher.say();
+		    document.write(teacher.say());
+
+		    var student= {
+		          first_name: "Tuấn",
+		          last_name: "Hiệp",
+		          age: 21,
+		          say: function() {}
+		    }
+		    student.say = aboutMe;
+		    return student.say();
+		    document.write(student.say());
+
+		        
+		    var parent= {
+		        first_name: "Mai",
+		        last_name: "Ngọc",
+		        age: 45,
+		        say: function() {}
+		    }
+		    parent.say = aboutMe;
+		    return parent.say();
+		    document.write(parent.say());
+		}
+	</script>
+	
+
+</body>
+</html>
