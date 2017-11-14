@@ -2,11 +2,16 @@
 	box-sizing: border-box;
 }
 
+h1 {
+	text-align: center;
+}
+
 .calculator{
 	border: 5px solid #ccccb3;
 	background-color: #99ccff;
 	width: 390px;
 	height: 600px;
+	margin-left: 300px;
 }
 
 #number {

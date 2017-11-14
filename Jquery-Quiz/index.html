@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Quiz-Jquery</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+	<div class="wrap">
+
+		<h1>QUIZ</h1>
+
+		<div id="box">			
+			<div id="quizContainer" class="container" >
+      			<div id="question" class="question" ></div>
+      			
+      			<div id="anwser">
+      				<div class="option">
+                <button name="option" value="1" class="opt" id="opt1" onclick="loadNextQuestion(this.value)"></button>
+      				</div>
+
+      				<div class="option">
+      					<button name="option" value="2" class="opt" id="opt2" onclick="loadNextQuestion(this.value)"></button>
+      				</div>
+
+      				<div class="option">
+      					<button name="option" value="3" class="opt" id="opt3" onclick="loadNextQuestion(this.value)"></button>
+      				</div>
+
+      				<div class="option">
+      					<button name="option" value="4" class="opt" id="opt4" onclick="loadNextQuestion(this.value)"></button>
+      				</div>
+      			</div>
+      			
+      			<p id="p"></p>
+            
+            <div class="theme">
+              <button id="changeTheme" onclick="changeTheme()" style="background-color: #ffcccc; font-size: 24px;">ChangeTheme</button>
+            </div>
+  			</div>
+  		
+  		<div id="result" class="container result" style="margin-top: -50px; text-align: center; font-size: 42px; color: #66ccff; font-weight: bold;">
+  		</div>
+  		<button id="backButton" class="back-btn" style="margin-top: 450px; ;margin-left: 367px; font-size: 50px;" onclick="startAgain()">Start Again</button>
+  		<div id="Congratulations" style="display: none;">
+    		<div class="congrats">
+      			<h2>Chúc Mừng</h2>
+      
+    		</div>
+    		<div class="congrats1">
+      			<h3>Bạn Đã Trả Lời Đúng : 5/5</h3>
+      
+    		</div>
+		</div>				
+	</div>
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="quiz.js"></script>
+</html>
