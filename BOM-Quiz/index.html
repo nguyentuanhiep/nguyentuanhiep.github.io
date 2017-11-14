@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+	<div class="wrap">
+		<div id="background">
+			<img src="CzuqeWJWQAEXBZh.jpg">
+		</div>
+
+		
+		<h1>QUIZ</h1>
+
+		<div id="box">			
+			<div id="quizContainer" class="container" >
+      			<div id="question" class="question" ></div>
+      			
+      			<div id="anwser">
+      				<div class="option">
+      					<label><input type="radio" name="option" value="1"> <span id="opt1"></span></label>
+      				</div>
+
+      				<div class="option">
+      					<label><input type="radio" name="option" value="2" > <span id="opt2"></span></label>
+      				</div>
+
+      				<div class="option">
+      					<label><input type="radio" name="option" value="3"> <span id="opt3"></span></label>
+      				</div>
+
+      				<div class="option">
+      					<label><input type="radio" name="option" value="4"> <span id="opt4"></span></label>
+      				</div>
+      			</div>
+      			
+      			<p id="p"></p>
+      			<div class="allButton">
+      				<button id="nextButton" class="next-btn" onclick="loadNextQuestion()">Next Question</button>  
+     			</div>
+  			</div>
+  		
+  		<div id="result" class="container result" style="margin-top: -600px; text-align: center; font-size: 42px; color: #66ccff; font-weight: bold;">
+  		</div>
+  		<button id="backButton" class="back-btn" style="margin-left: 367px; font-size: 50px;" onclick="startAgain()">Start Again</button>
+  		<div id="Congratulations" style="display: none;">
+    		<div class="congrats">
+      			<h2>Chúc Mừng</h2>
+      
+    		</div>
+    		<div class="congrats1">
+      			<h3>Bạn Đã Trả Lời Đúng : 5/5</h3>
+      
+    		</div>
+		</div>				
+	</div>
+</body>
+
+<script src="quiz.js"></script>
+</html>

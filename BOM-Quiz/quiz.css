@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+
+@keyframes title {
+	0% {color: #ff0000;}
+	25%{color: #ff9900;}
+	50%{color: #ffff00;}
+	75%{color: #b3ffff;}
+	100%{color: #0099ff;}
+}
+
+h1 {
+	font-size: 100px;
+	animation: title 5s ease infinite;
+	position: absolute;
+	margin-top: -750px;
+	margin-left: 367.185px;
+}
+
+.question {
+	border: 0px solid #ddd;
+	width: 600px;
+	margin-top: -600px;
+	margin-left: 200px;
+	font-size: 40px;
+}
+
+#anwser {
+	margin-top: 50px;
+	margin-left: 300px;
+	font-size: 24px;
+}
+
+#p {
+	margin-left: 600px;
+	font-size: 20px;
+	color: #cc0099;
+}
+
+#nextButton {
+	margin-left: 600px;
+	font-size: 30px;
+	color: #996633;
+}
+
+@keyframes congrats {
+	0% {font-size: 1px;}
+	/*25% {font-size: 42px;}
+	50% {font-size: 54px;}
+	75% {font-size: 66px;}*/
+	100% {font-size: 78px;}
+}
+
+h2 {
+	margin-top: -600px;
+    text-align: center;
+    /*font-size: 42px;*/
+    font-family: tahoma;
+    color: red;
+    animation: congrats 2s ease infinite;
+}
+
+h3 {
+	text-align: center;
+    font-size: 30px;
+    font-family: tahoma;
+    color: #00ffff;
+}
+
+.wrap {
+	max-width: 1000px;
+	height: 753px;
+	margin: auto;
+	border: 5px solid #66ccff;
+}
