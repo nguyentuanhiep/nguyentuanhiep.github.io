@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: calc(100% + 135px);
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.wrap {
+	position: relative;
+	margin: auto;
+	padding: 15px;
+	max-width: 1920px;
+	max-height: 1080px;
+	/*z-index: 1;*/
+	width: 1600px;
+	height: 900px;
+}
+
+img {
+	width: 120px;
+	height: 180px;
+	border-radius: 10px;
+}
+
+.content {
+	position: relative;
+	overflow: auto;
+	margin-left: 200px;
+	z-index: 2;
+	width: 1200px
+}
+
+.grid {
+	float: left;
+	padding: 10px;
+}
+
+.card {
+	position: relative;
+}
+
+/*xoay ngược mặt sau lá bài*/
+.card .back {
+	transform: rotateY(180deg); /* xoay element theo trục Y 180 độ */
+	position: absolute; /* ghép 2 mặt vào nhau*/
+	top: 0;
+	left: 0;
+}
+
+.card img:hover, .flipped img {
+	box-shadow: 0px 20px 20px 0px #e6e6e6;
+}
+
+.flipped .back {
+	transform: rotateY(0deg);
+}
+
+.flipped .front {
+	transform: rotateY(180deg);
+}
+
+
+
+.card .front, .card .back {
+	transition: all 0.5s; /* thời gian chuyển động */
+	backface-visibility: hidden; /* khi 1 element bị lật sang mặt sau thì ẩn nó đi */
+}

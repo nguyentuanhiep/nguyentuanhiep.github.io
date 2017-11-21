@@ -1,4 +1,4 @@
-$(document).ready(function () {
+  $(document).ready(function () {
   
   var arr=["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10", "a11", "a12", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10", "a11", "a12"];
   var current=null;
@@ -33,32 +33,45 @@ $(document).ready(function () {
   loadContent();
 
   $('.card').on('click',function(){
+    var test =this;
+    console.log ($(test));
+    console.log(test);
     console.log($(this));
-    $(this).addClass('flipped');
+    $(test).addClass('flipped');
+    $(test).css('pointer-events', 'none');
 
-    // if(!current) {
-    //   current = $(this);
-    // } else {
-    //     if (current.attr('data') != $(this).attr('data')) {
-    //       //Khác nhau
-    //       console.log('Khác nhau');
-    //       // setTimeout(function() {
-    //        current.tonggleClass('flipped');
-    //       // $(this).tonggleClass('flipped');
-    //       current = null;
-    //       // }, 500);
+    if(!current) {
+      current = $(test);
+      console.log (current);
+    } else {
+        if (current.attr('data') != $(this).attr('data')) {
+          //Khác nhau
+          console.log('Khác nhau');
+          setTimeout(function(){
+            $(test).toggleClass('flipped');
+            current.toggleClass('flipped');
+            current = null;
+          }, 500);
+          $('.card').css('pointer-events', 'auto');
+
           
-    //     } else {
-    //       //Giống nhau
-    //       console.log('Giống nhau');
-    //       current = null;
-    //     }
-    // }
+          
+        } else {
+          //Giống nhau
+          setTimeout(function(){
+            console.log ("giong" +this);
+            console.log ("giong" +current);
+            console.log (this==current);
+            current.css('opacity', '0');
+            $(test).css('opacity', '0');
+            current = null;
+          }, 400);
+          
+        }
+        
+    }
 
   });
- // function flip (n){
- //    console.log(n);
- //  }
 
 
 })
