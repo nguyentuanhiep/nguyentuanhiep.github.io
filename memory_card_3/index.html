@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Memory Card</title>
+	<meta charset="utf-8"/ >
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+
+</head>
+<body >
+		<div id="snow">
+		</div>
+	<div class="wrap" style="background-image:url('img/3Ienxt.jpg')">
+		<div id="box">
+			<div class="timer">
+				<div class="progressbar" style ="display: block;">
+					<progress value="100" max="100"></progress>
+				</div>
+			</div>
+
+			<div class="content">
+					
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="modal begin" style="display: block;">
+		<div class="dialog">
+			<h1>Memory Card</h1>
+			<h2>Click 'Start' to play</h2>
+			<button onclick="startGame()" style="font-size: 60px; border-radius: 10px; background-color: bisque;">Start</button>
+		</div>
+	</div>
+
+	<div class="modal win" style="display: none;">
+		<div class="dialog">
+			<img src="img/victory.png">
+			<h1>You are win</h1>
+			<button onclick="playAgain()" style="font-size: 60px; border-radius: 10px; background-color: bisque;">Play Again</button>
+		</div>
+	</div>
+
+	<div class="modal lose" style="display: none;">
+		<div class="dialog">
+			<img src="img/97a36591-da85-4af9-821c-84e906ff2099.png">
+			<h1>Time over</h1>
+			<button onclick="playAgain()" style="font-size: 60px; border-radius: 10px; background-color: bisque;">Play Again</button>
+		</div>
+	</div>
+
+	<div class="modal-backdrop" style="display: block;"></div>
+
+	<audio autoplay>
+		<source src="Legends Never Die - Against The Current [128kbps_MP3].mp3" type="audio/mpeg">			
+	</audio>
+
+	<audio id="flip-sound">
+		<source src="flip.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="incorrect-sound">
+		<source src="incorrect.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="correct-sound">
+		<source src="correct.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="count10-sound">
+		<source src="10s.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="win-sound">
+		<source src="win.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="lose-sound">
+		<source src="win.mp3" type="audio/mpeg">
+	</audio>
+
+<script src="js/jquery-3.2.1.min (1).js"></script>
+	<script src="index.js"></script>
+</body>
+
+
+
+</html>
