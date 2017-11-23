@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+.head {
+	float: left;
+	background-color: #e6ffff;
+	width: 1000px;
+	height: 116px;
+}
+
+#click {
+	height: 24px;
+	width: 90px;
+	border-radius: 10px;
+	background-color: #e6e6e6;
+}
+
+.content {
+	float: left;
+	width: 1000px;
+	height: 100vh;
+	background-color: #f2f2f2;
+}
+
+.old {
+	width: 600px;
+	float: left;
+}
+
+.new {
+	width: 400px;
+	float: left;
+}
+
+.signup {
+	font-size: 24px;
+	padding-top: 15px;
+}
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.info {
+	position: absolute;
+	margin-left: 350px;
+}
+
