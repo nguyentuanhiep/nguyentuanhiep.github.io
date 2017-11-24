@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div style="margin: 15px;">
+				<img src="img/Slack-CMYK.png">
+			</div>
+
+			<div style="margin-top: -90px">
+				<div style="margin-left: 400px;">
+					Email:<br>
+					<input type="text" name="oldEmail" style="font-size: 15px;" />
+				</div>
+
+				<div style="margin-left: 600px; margin-top: -42px;">
+					Password:<br>
+					<input type="password" name="oldPassword"  style="font-size: 15px;" />
+				</div>
+
+				<div style="margin-left: 800px; margin-top: -25px">
+					<button id="click">Log in</button>
+				</div>
+
+				<div style="margin-left: 400px; margin-top: 5px;">
+					<input type="checkbox" name="">Remember me
+				</div>
+
+				<div style="margin-left: 600px; text-decoration: none; color: black;margin-top: -20px;}">
+					<a href="#">Forgot Password?</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="old">
+				<h1 style="margin-left: 45px;"></h1>
+				<p style="font-size: 16px; font-family: verdana; margin-left: 45px;"></p>
+
+			</div>
+		
+			<div class="new">
+				<form action="result.html" id="form-register">
+					<h1>CREATE A NEW ACCOUNT</h1>
+
+					<p style="font-size: 16px; font-family: verdana">It's free and always will be.</p>
+
+					<div class="signup">
+						<input type="text" id="name" name="Name" placeholder="Name"/><span class="error"></span><br/><span class="sugges yourname">Your name</span><br/>
+					</div>
+					
+					<div class="signup">
+						<input type="text" id="email" name="Email" placeholder="Email" /><span class="error"></span><br/><span class="sugges mail">Example: example@gmail.com</span><br/>
+					</div>
+	
+					<div class="signup">
+						<input type="password" id="password" name="Password" placeholder="Password" /><span class="error"></span><br/><span class="sugges pass">Password must be between 4 and 8 digits long and include at least one numeric digit.</span><br/>
+					</div>
+
+					<div class="signup">
+						<input type="password" id="confirm" name="Confirm" placeholder="Confirm Password" /><span class="error"></span><br/><span class="sugges repeat">Please repeat your password</span><br/>
+					</div>
+
+					<div class="signup">
+						<input type="text" id="address" name="Address" placeholder="Address" /><span class="error"></span><br/><br/>
+					</div>
+
+					<div class="signup">
+						<input type="text" id="phone" name="Telephone Number" placeholder="Telephone Number" /><span class="error"></span><br/><br/>
+					</div>
+
+					<div class="gender">
+						<input type="radio" name="gender" id="male" value="Male"> <label for="male">Male</label>
+						<input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+					</div>
+
+					<div class="signup">
+						<p style="font-size: 18px;">Birthday</p>
+						<select name="Birthday" style="font-size: 16px;" id="day">
+							<option>Day</option>
+						</select>
+
+						<select name="Month" style="font-size: 16px;" id="month">
+							<option>Month</option>
+						</select>
+
+						<select name="Year" style="font-size: 16px;" id="year">
+							<option>Year</option>
+						</select>
+					</div>
+
+					<div class="signup">
+						<button style="width: 257px; height: 50px; font-size: 30px; border-radius: 20px; background-color:#66ff66; ">Sign Up</button>
+					</div>
+			
+				</form>
+
+			</div>
+		</div>
+		
+		
+	</div>
+	
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</html>

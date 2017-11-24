@@ -410,11 +410,13 @@ a.navbar-brand {
 .farm h2 {
     color: #dd2c00;
     font-weight: 600;
+    margin-top: 50px;
 }
 
 .market h2 {
     color: #dd2c00;
     font-weight: 600;
+    margin-top: 70px;
 }
 
 .new h2 {
