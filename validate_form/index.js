@@ -31,7 +31,7 @@ $('#form-register').on('submit',function(){
 			$('#name').next('span').text('');
 		}
 
-		if ($('#email').val().match(/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/) == null) {
+		if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
 			$('#email').next('span').text('Email is invalid');
 			isValid=false;
 		} else {
@@ -59,7 +59,7 @@ $('#form-register').on('submit',function(){
 			$('#address').next('span').text('');
 		}
 
-		if (typeof ($('#phone').val().trim()) != 'number' ) {
+		if ($('#phone').val().match(/^\(0[1-9]{1}\)[0-9]{8}$/) == null) {
 			$('#phone').next('span').text('Phone is empty');
 			isValid=false;
 		} else {
@@ -74,6 +74,7 @@ $('#name').on('click', function(){
 	$('.mail').hide();
 	$('.pass').hide();
 	$('.repeat').hide();
+	$('.telephone').hide();
 });
 
 $('#email').on('click', function(){
@@ -81,7 +82,7 @@ $('#email').on('click', function(){
 	$('.pass').hide();
 	$('.repeat').hide();
 	$('.yourname').hide();
-
+	$('.telephone').hide();
 });
 
 $('#password').on('click', function(){
@@ -89,6 +90,7 @@ $('#password').on('click', function(){
 	$('.mail').hide();
 	$('.yourname').hide();
 	$('.repeat').hide();
+	$('.telephone').hide();
 });
 
 $('#confirm').on('click', function(){
@@ -96,6 +98,7 @@ $('#confirm').on('click', function(){
 	$('.pass').hide();
 	$('.mail').hide();
 	$('.yourname').hide();
+	$('.telephone').hide();
 });
 
 $('#address').on('click',function(){
@@ -103,9 +106,11 @@ $('#address').on('click',function(){
 	$('.pass').hide();
 	$('.mail').hide();
 	$('.yourname').hide();
+	$('.telephone').hide();
 });
 
 $('#phone').on('click',function(){
+	$('.telephone').show();
 	$('.repeat').hide();
 	$('.pass').hide();
 	$('.mail').hide();
