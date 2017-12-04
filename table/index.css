@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+}
