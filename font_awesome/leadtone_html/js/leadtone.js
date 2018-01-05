@@ -13,9 +13,5 @@ $(function(){
 		})
 	}
 
-	$(".collapse > ul > li > a").each(function() {
-		var t = window.location.pathname
-		, a = $(this).attr("href");
-	  a && t == a && $(this).parent("li").addClass("active_1")
-	})
+	
 });

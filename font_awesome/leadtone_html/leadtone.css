@@ -190,11 +190,11 @@ a.navbar-brand {
     position: relative;
 }
 
-.about hr {
+/* .about hr {
     width: 30%;
     border: 1px solid #666666;
     margin-left: inherit;
-}
+} */
 
 .nav-tabs {
     border: none;
@@ -243,6 +243,7 @@ a.navbar-brand {
 @media (min-width: 768px) and (max-width: 1024px) {
     .product_bg {
         margin-top: 210px;
+        height: 550px;
     }
     
     .product {
@@ -303,13 +304,7 @@ a.navbar-brand {
         display: none;
     }
 
-    .text_1 {
-        /* text-align: center; */
-    }
-
-    .text_farm {
-        /* margin-left: -65px; */
-    }
+    
 
     .product h2.text_1 {
         margin-left: -10px;
@@ -331,6 +326,14 @@ a.navbar-brand {
     .our_web_2 img {
         padding-bottom: 10px;
     }
+
+    .ar {
+        text-align: left;
+    }
+
+    hr {
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -338,10 +341,15 @@ a.navbar-brand {
         font-size: 60px;
         text-transform: capitalize;
     }
+
+    .product {
+        margin-top: -260px;
+    }
 }
 
 .bookmark {
     width: 30%;
+    opacity: 0.5;
 }
 
 .carousel-control.left {
@@ -373,6 +381,10 @@ a.navbar-brand {
     margin-top: -13px;
 }
 
+/* .product a {
+    font-weight: 500;
+} */
+
 .logo_1 {
     display: inline;
     margin-left: 160px;
@@ -392,9 +404,10 @@ a.navbar-brand {
 
 .img_1 {
     position: absolute;
-    top: 40px;
+    top: 10px;
     right: 0;
-    opacity: 0.8;
+    opacity: 0.5;
+    width: 50%;
 }
 
 .item_1 {
@@ -457,7 +470,7 @@ a.navbar-brand {
 .item_animation a img:hover {
     box-shadow: 0 4px 7px -4px #888888;
     transition: all 0.3s;
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .avar_shadow img {
@@ -592,13 +605,13 @@ a.navbar-brand {
 
 .hr {
     border: 1px solid #dd2c00;
-    width: 10%;
+    width: 20%;
     margin-left: 0;
 }
 
-hr.hr_4 {
+.hr_4 {
     border: 1px solid #dd2c00;
-    width: 10%;
+    width: 20%;
     margin-right: 0;
 }
 
@@ -694,9 +707,9 @@ hr.hr_4 {
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
-    .nav {
+    /* .nav {
         margin-top: -50px;
-    }
+    } */
 
     .logo_1 {
         margin-left: 120px;
@@ -741,19 +754,19 @@ hr.hr_4 {
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone:hover .phonering-alo-ph-circle {
-    border-color:#00aff2;
+    border-color:#75eb50;
     opacity:.5
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle {
-    border-color:#75eb50 ;
-    border-color:#baf5a7;
+    border-color:#00aff2 ;
+    border-color:#bfebfc;
     opacity:.5
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle {
     border-color:#00aff2 ;
-    border-color:#bfebfc;
+    border-color:#baf5a7;
     opacity:.5
 }
 
@@ -802,13 +815,13 @@ hr.hr_4 {
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle-fill {
-    background-color:rgba(117,235,80,0.5);
+    background-color:rgba(0,175,242,0.5);
     background-color:#baf5a7 9;
     opacity:.75!important
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle-fill {
-    background-color:rgba(0,175,242,0.5);
+    background-color:rgba(117,235,80,0.5);
     background-color:#a6e3fa 9
 }
 
@@ -854,13 +867,13 @@ hr.hr_4 {
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-img-circle {
-    background-color:#75eb50;
-    background-color:#75eb50;
+    background-color:#00aff2;
+    background-color:#00aff2;
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle {
-    background-color:#00aff2;
-    background-color:#00aff2;
+    background-color:#75eb50;
+    background-color:#75eb50;
 }
 
 .phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-img-circle {
@@ -892,4 +905,58 @@ hr.hr_4 {
         left: -50px;
         z-index: 999999999;
     }
+}
+
+.menu_1 {
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    margin-left: 25px;
+}
+
+.tieu_de {
+    background: #e9101d;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.san_pham {
+    background: #f2404c;
+    padding: 10px;
+    font-style: italic;
+}
+
+.san_pham > a {
+    color: white;
+}
+
+.san_pham > a >i {
+    float: right;
+}
+
+.cate li{
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+.sanpham {
+    border: 1px solid #ececec;
+    width: 45%;
+    text-align: center
+}
+
+.btn {
+    border: 1px solid #e9101d;
+    color: #e9101d;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #e9101d;
+    color: white;
 }
