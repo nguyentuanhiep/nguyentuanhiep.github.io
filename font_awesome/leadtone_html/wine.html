@@ -15,15 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <script src="./js/wow.js"></script>
-    <!-- <script>
-        new WOW().init();
-    </script> -->
-    <script src="./js/leadtone.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    
 
     
     <!--[endif]-->
@@ -68,7 +60,15 @@
                     </a>
                     
                 </div>
-    
+                
+                <!-- giỏ hàng -->
+                
+                <div style="float: right; cursor: pointer; margin-top: 15px; margin-left: 40px;">
+                    <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
+                        <span class="badge badge-notify my-cart-badge"></span>
+                    </span>
+                </div>
+
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right hover_border_bot ">
@@ -80,8 +80,9 @@
                         <li class="dropdown">
                             <a href="_" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="beef.html">Thịt Bò</a></li>
+                                
                                 <li><a href="lamp.html">Thịt Cừu</a></li>
+                                <li><a href="beef.html">Thịt Bò</a></li>
                                 <li><a href="fruit-juice.html">Nước ép hoa quả</a></li>
                                 <li><a href="wine.html">Rượu vang</a></li>
                                 <li><a href="beauty.html">Sản phảm làm đẹp</a></li>
@@ -98,11 +99,11 @@
                                 Giới thiệu
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="faqs.html">
                                 Câu hỏi thường gặp
                             </a>
-                        </li>
+                        </li> -->
     
                     </ul>
                 </div>
@@ -132,13 +133,7 @@
                         </div>
 
                         <div class="danh_sach">
-                            <div class="san_pham">
-                                <a href="beef.html">
-                                    Thịt Bò
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                </a>
-                                
-                            </div>
+                            
 
                             <div class="san_pham">
                                 <a href="lamp.html">
@@ -147,6 +142,14 @@
                                 </a>
                                 
                             </div>
+
+                            <div class="san_pham">
+                                    <a href="beef.html">
+                                        Thịt Bò
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                    
+                                </div>
 
                             <div class="san_pham">
                                 <a href="fruit-juice.html">
@@ -192,7 +195,8 @@
                             <strong>650.000₫</strong>
                         </div>
                         <div>
-                            <button class="btn">Thêm vào giỏ hàng</button>
+                            <button class="btn my-cart-btn" data-id="1" data-name="Vang Syrah" data-summary="summary 1" data-price="650000" data-quantity="1"
+                            data-image="./img/item/item_5.jpg">Thêm vào giỏ hàng</button>
                         </div>
                     </li>
 
@@ -203,7 +207,8 @@
                             <strong>650.000₫</strong>
                         </div>
                         <div>
-                            <button class="btn">Thêm vào giỏ hàng</button>
+                            <button class="btn my-cart-btn" data-id="2" data-name="Vang Chardonnay" data-summary="summary 2" data-price="650000" data-quantity="1"
+                            data-image="./img/item/chardonnay-c5178c1e-6f85-48d0-8d7a-401d53d3edaf-2048x2048_84.jpg">Thêm vào giỏ hàng</button>
                         </div>
                     </li>
 
@@ -214,7 +219,8 @@
                             <strong>650.000₫</strong>
                         </div>
                         <div>
-                            <button class="btn">Thêm vào giỏ hàng</button>
+                            <button class="btn my-cart-btn" data-id="3" data-name="Vang Gewürztraminer" data-summary="summary 3" data-price="650000" data-quantity="1"
+                            data-image="./img/item/gewurztraminer-afce75a9-e425-47db-8678-514aa4ed0dab-2048x2048_70.jpg">Thêm vào giỏ hàng</button>
                         </div>
                     </li>
 
@@ -225,7 +231,8 @@
                             <strong>650.000₫</strong>
                         </div>
                         <div>
-                            <button class="btn">Thêm vào giỏ hàng</button>
+                            <button class="btn my-cart-btn" data-id="1" data-name="Vang Merlot" data-summary="summary 4" data-price="650000" data-quantity="1"
+                            data-image="./img/item/merlot-4093a07f-545f-46ad-99c0-eef5fb2e2f23-2048x2048_77.jpg">Thêm vào giỏ hàng</button>
                         </div>
                     </li>
                 </ul>
@@ -300,5 +307,60 @@
         </div>
     </div>
 
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+     <script src="js/jquery-2.2.3.js"></script>
+     <script src="./js/wow.js"></script>
+     <!-- <script>
+         new WOW().init();
+     </script> -->
+     <script src="./js/leadtone.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+ 
     
+    <script src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var goToCartIcon = function($addTocartBtn){
+              var $cartIcon = $(".my-cart-icon");
+              var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+              $addTocartBtn.prepend($image);
+              var position = $cartIcon.position();
+              $image.animate({
+                top: position.top,
+                left: position.left
+              }, 500 , "linear", function() {
+                $image.remove();
+              });
+            }
+
+           
+            $('.my-cart-btn').myCart({
+                currencySymbol: '',
+                classCartIcon: 'my-cart-icon',
+                classCartBadge: 'my-cart-badge',
+                classProductQuantity: 'my-product-quantity',
+                classProductRemove: 'my-product-remove',
+                classCheckoutCart: 'my-cart-checkout',
+                affixCartIcon: true,
+                showCheckoutModal: true,
+                numberOfDecimals: 1,
+                cartItems: [],
+                checkoutCart: function (products, totalPrice, totalQuantity) {
+                    var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+                    checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+                    $.each(products, function () {
+                        checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+                    });
+                    alert(checkoutString)
+                    console.log("checking out", products, totalPrice, totalQuantity);
+                },
+                
+            });
+
+            
+        });
+    </script>
 </body>

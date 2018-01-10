@@ -94,7 +94,7 @@ a {
 }
 
 h2 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 body {
@@ -177,14 +177,7 @@ a.navbar-brand {
     width: 32%;
 }
 
-.parallax_bg {
-    background: url("./img/slider/sl_1.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 450px;
-}
+
 
 .about_bg {
     position: relative;
@@ -400,6 +393,7 @@ a.navbar-brand {
 .product_bg {
     position: relative;
     margin-bottom: 90px;
+    margin-top: 260px;
 }
 
 .img_1 {
@@ -543,7 +537,7 @@ a.navbar-brand {
     height: 100%;
     top: 0;
     background-color: rgb(255,255,255);
-    background: url("./img/bg/1.jpg");
+    background: url("./img/bg/1 copy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
@@ -567,7 +561,7 @@ a.navbar-brand {
     top: 0;
     right: 0;
     background-color: rgb(255,255,255);
-    background: url("./img/bg/2.jpg");
+    background: url("./img/bg/2 copy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -685,7 +679,7 @@ a.navbar-brand {
     padding: 5px 10px;
 }
 .form_bg {
-    background-color: rgba(225,225,225,0.6);
+    background-color: rgba(225,225,225,1);
     padding: 0 20px;
     border-radius: 4px;
 }
@@ -953,7 +947,7 @@ a.navbar-brand {
     text-transform: uppercase;
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 .btn:hover {

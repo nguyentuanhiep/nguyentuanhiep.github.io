@@ -15,16 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <script src="./js/wow.js"></script>
-    <!-- <script>
-        new WOW().init();
-    </script> -->
-    <script src="./js/leadtone.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
-
+   
 
     <!--[endif]-->
 </head>
@@ -71,11 +62,11 @@
 
                 <!-- giỏ hàng -->
                 
-                <!-- <div style="float: right; cursor: pointer; margin-top: 15px; margin-left: 40px;">
+                <div style="float: right; cursor: pointer; margin-top: 15px; margin-left: 40px;">
                     <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
                         <span class="badge badge-notify my-cart-badge"></span>
                     </span>
-                </div> -->
+                </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -90,12 +81,13 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a href="beef.html">Thịt Bò</a>
-                                </li>
+                                
                                 <li>
                                     <a href="lamp.html">Thịt Cừu</a>
                                 </li>
+                                <li>
+                                        <a href="beef.html">Thịt Bò</a>
+                                    </li>
                                 <li>
                                     <a href="fruit-juice.html">Nước ép hoa quả</a>
                                 </li>
@@ -120,11 +112,11 @@
                                 Giới thiệu
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="faqs.html">
                                 Câu hỏi thường gặp
                             </a>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </div>
@@ -156,13 +148,7 @@
                         </div>
 
                         <div class="danh_sach">
-                            <div class="san_pham">
-                                <a href="beef.html">
-                                    Thịt Bò
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                </a>
-
-                            </div>
+                            
 
                             <div class="san_pham">
                                 <a href="lamp.html">
@@ -171,6 +157,14 @@
                                 </a>
 
                             </div>
+
+                            <div class="san_pham">
+                                    <a href="beef.html">
+                                        Thịt Bò
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+    
+                                </div>
 
                             <div class="san_pham">
                                 <a href="fruit-juice.html">
@@ -331,7 +325,18 @@
         </div>
     </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+     <script src="js/jquery-2.2.3.js"></script>
+     <script src="./js/wow.js"></script>
+     <!-- <script>
+         new WOW().init();
+     </script> -->
+     <script src="./js/leadtone.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+ 
+    
     <script src="js/jquery.mycart.js"></script>
     <script type="text/javascript">
         $(function () {
@@ -349,25 +354,9 @@
               });
             }
 
-            // if (0 < $('.product button').length) {
-            //     $('.product button').click(function () {
-            //         var offset = $(this).parent().offset();
-            //         $(this).parent().clone().addClass('product-clone').css({
-            //             'left': offset.left + 'px',
-            //             'top': parseInt(offset.top - $(window).scrollTop()) + 'px',
-            //             'width': $(this).parent().width() + 'px',
-            //             'height': $(this).parent().height() + 'px'
-            //         }).appendTo($('.product').parent());
-
-            //         var cart = $('.shopping-cart').offset();
-            //         $('.product-clone').animate({ top: parseInt(cart.top - $(window).scrollTop()) + 'px', left: cart.left + 'px', 'height': '0px', 'width': '0px' }, 800, function () {
-            //             $(this).remove();
-            //         });
-            //     });
-            // }
-
+           
             $('.my-cart-btn').myCart({
-                currencySymbol: '$',
+                currencySymbol: '',
                 classCartIcon: 'my-cart-icon',
                 classCartBadge: 'my-cart-badge',
                 classProductQuantity: 'my-product-quantity',
@@ -389,11 +378,8 @@
                 
             });
 
-            $("#addNewProduct").click(function (event) {
-                var currentElementNo = $(".row").children().length + 1;
-                $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
-            });
+            
         });
-    </script> -->
+    </script>
 
 </body>
