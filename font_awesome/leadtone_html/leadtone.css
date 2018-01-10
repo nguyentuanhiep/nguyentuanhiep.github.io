@@ -503,7 +503,7 @@ a.navbar-brand {
     right: 67px;
     /* bottom: -5px; */
     width: 47%;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 @media (max-width: 737px) {
@@ -537,7 +537,7 @@ a.navbar-brand {
     height: 100%;
     top: 0;
     background-color: rgb(255,255,255);
-    background: url("./img/bg/1 copy.jpg");
+    background: url("./img/bg/5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
@@ -561,7 +561,7 @@ a.navbar-brand {
     top: 0;
     right: 0;
     background-color: rgb(255,255,255);
-    background: url("./img/bg/2 copy.jpg");
+    background: url("./img/bg/4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
